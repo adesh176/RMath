@@ -1,12 +1,175 @@
-﻿@{
-    ViewBag.Title = "Home Page";
-}
-
-
-
-<h4 style="text-align:center;color:blueviolet;font-weight:bold;">
+﻿<h4 style="text-align:center;color:blueviolet;font-weight:bold;">
     Panchanga 2015/2016
 </h4>
 <div style="text-align:center;">
-    <iframe style="text-align:center;" src="/pdf/manmatha-panchanga-2015-16-est.pdf" width="80%" height="800"></iframe>
+        <iframe style="text-align:center;" src="/pdf/manmatha-panchanga-2015-16-est.pdf" width="80%" height="800"></iframe>
+    </div>
+
+@*<div class="demo-section k-content">
+    <div id="tabid">
+        <ul>
+            <li class="k-state-active">One</li>
+            <li>
+                Two
+            </li>
+            <li>
+                Three
+            </li>
+        </ul>
+        <div>
+            asdsadsadasdsadsad
+        </div>
+        <div>
+            lkjsljkljkljklj
+        </div>
+        <div>
+            I am three
+        </div>
+    </div>
 </div>
+
+    <br /><br />
+
+    <input id="datepicker"/>
+
+    <br /><br />
+
+    <input id="autoid"/>
+
+<br /><br />
+
+<div id="multi"></div>
+
+    <br /><br />
+    <input type="button" id="clk" value="Click" /> 
+
+        <input type="button" id="clk1" value="Open Window" />
+<br /><br />
+<textarea id="editor"></textarea>
+<br /><br />
+<div id="schedulerid"></div>
+
+
+<br /><br />
+    <div id="gridid"></div>
+
+<div id="winid">
+
+    Hello Anirudg
+
+</div>
+
+    <script>
+        function onclick1() {
+            var dataItem;
+            var grid = $("#gridid").data("kendoGrid");
+            grid.select().each(function () {
+                dataItem = grid.dataItem($(this));
+                alert(dataItem.id + '-' + dataItem.name + '-' + dataItem.age);
+            });
+
+        }
+
+        function onclick2() {
+            $("#winid").kendoWindow({
+                actions: ["Close"],
+                draggable: true,
+                height: 200,
+                width: 400,
+                modal: true,
+                resizable: true,
+                visible: false,
+                title: "Hello",
+                close: function () {
+                    $(this).remove();
+                }
+            });
+            var kwindow = $("#winid").data("kendoWindow");
+            kwindow.open().center();
+
+        }
+
+        $(document).ready(function () {
+            $("#editor").kendoEditor();
+            $("#schedulerid").kendoScheduler();
+            $("#clk").click(onclick1);
+            $("#clk1").click(onclick2);
+            
+            $("#tabid").kendoTabStrip();
+            $("#datepicker").kendoDatePicker();
+            LoadGrid();
+            var autodata = [
+                               "Albania",
+                               "Andorra",
+                               "Ukraine",
+                               "United Kingdom",
+                               "Vatican City"
+            ];
+            $("#multi").kendoMultiSelect(
+                {
+                    dataSource: autodata
+                }
+                );
+
+            $("#autoid").kendoAutoComplete({
+                dataSource: autodata
+            });
+
+
+        });
+
+        function LoadGrid() {
+
+            var data = [
+                { id: 1, name: "sanjeev", age: 12 },
+                { id: 2, name: "ani", age: 12 },
+                { id: 3, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 },
+                { id: 1, name: "ani", age: 12 }
+            ];
+
+            var cols = [
+                { field: "name", title: "NAME" },
+                { field: "age", title: "AGE" }
+            ];
+
+            $("#gridid").kendoGrid(
+                {
+                    groupable: true,
+                    sortable: true,
+                    pageable: true,
+                    filterable: false,
+                    selectable: "row",
+                    columns: cols
+                }
+            );
+
+            var grid = $("#gridid").data("kendoGrid");
+            grid.dataSource.data(data);
+
+
+        }
+
+
+
+    </script>*@
+
+
+

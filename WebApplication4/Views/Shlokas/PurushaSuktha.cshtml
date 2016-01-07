@@ -8,7 +8,9 @@
 
 <script>
     function AttachFile(extn) {
-        var filename = "/Shlokas/" + "PurushaSuktha/" + "Purusha_Suktam_" + extn + ".pdf";
+        
+        var filename = "../pdf/PurushaSuktha/Purusha_Suktam_" + extn + ".pdf";
+
         var scr = '<iframe src="' + filename + '" width="90%" height="3000"></iframe>';
          $("#divFile").html(scr);
     }

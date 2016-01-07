@@ -8,7 +8,8 @@
 <div style="text-align:center;" id="divFile"></div>
 <script>
     function AttachFile(extn) {
-        var filename = "/Shlokas/" + "VishnuSahasranama/" + "Sree_Vishnu_Sahasra_Nama_Stotram_" + extn + ".pdf";
+        var filename = "../pdf/VishnuSahasranama/Sree_Vishnu_Sahasra_Nama_Stotram_" + extn + ".pdf";
+
         var scr = '<iframe src="' + filename + '" width="90%" height="5000"></iframe>';
         $("#divFile").html(scr);
     }
