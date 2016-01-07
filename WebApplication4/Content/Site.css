@@ -1,0 +1,144 @@
+﻿body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+.navbar-custom {
+  background-color: #8e4c45;
+  border-color: #37ea64;
+}
+.navbar-custom .navbar-brand {
+  color: #c3ddc0;
+}
+.navbar-custom .navbar-brand:hover, .navbar-custom .navbar-brand:focus {
+  color: #1d3420;
+}
+.navbar-custom .navbar-text {
+  color: #c3ddc0;
+}
+.navbar-custom .navbar-nav > li > a {
+  color: #c3ddc0;
+}
+.navbar-custom .navbar-nav > li > a:hover, .navbar-custom .navbar-nav > li > a:focus {
+  color: #1d3420;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu {
+  background-color: #8e4c45;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a {
+  color: #c3ddc0;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:hover,
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > a:focus {
+  color: #1d3420;
+  background-color: #37ea64;
+}
+.navbar-custom .navbar-nav > li > .dropdown-menu > li > .divider {
+  background-color: #8e4c45;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-custom .navbar-nav > .active > a:hover, .navbar-custom .navbar-nav > .active > a:focus {
+  color: #1d3420;
+  background-color: #37ea64;
+}
+.navbar-custom .navbar-nav > .open > a, .navbar-custom .navbar-nav > .open > a:hover, .navbar-custom .navbar-nav > .open > a:focus {
+  color: #1d3420;
+  background-color: #37ea64;
+}
+.navbar-custom .navbar-toggle {
+  border-color: #37ea64;
+}
+.navbar-custom .navbar-toggle:hover, .navbar-custom .navbar-toggle:focus {
+  background-color: #37ea64;
+}
+.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #c3ddc0;
+}
+.navbar-custom .navbar-collapse,
+.navbar-custom .navbar-form {
+  border-color: #c3ddc0;
+}
+.navbar-custom .navbar-link {
+  color: #c3ddc0;
+}
+.navbar-custom .navbar-link:hover {
+  color: #1d3420;
+}
+
+@media (max-width: 767px) {
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a {
+    color: #c3ddc0;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > li > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #1d3420;
+  }
+  .navbar-custom .navbar-nav .open .dropdown-menu > .active > a, .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:hover, .navbar-custom .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #1d3420;
+    background-color: #37ea64;
+  }
+}
+
+ .box {
+    border: 1px solid #6f91cf;
+    box-shadow: 0 1px 5px #CCC;
+    border-radius: 5px;
+    width:20%;
+    float:left;
+    text-align:left;
+    margin: 3px auto;
+    overflow: hidden;
+    clear:both;
+    vertical-align:top;
+  }
+  .box header {
+    background: #c3ddc0;
+    background-image: -webkit-linear-gradient( top, #f1f1f1, #6f91cf );
+    background-image: -ms-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -moz-linear-gradient( top, #f1f1f1, #CCC );
+    background-image: -o-linear-gradient( top, #f1f1f1, #CCC );
+    box-shadow: 0 1px 2px #888;
+    padding: 4px;
+  }
+  .box h1 {
+    padding: 2px;
+    margin: 0;
+    font-size: 12px;
+    font-weight: normal;
+    text-shadow: 0 1px 2px white;
+    color: darkblue;
+    text-align: center;
+  }
+  .box section {
+    padding: 5px 15px; 
+    line-height: 155%;
+    font-size: 11px;
+    color: #333;
+  }
+
+	
+footer {
+padding-top:20px;
+  bottom: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+}

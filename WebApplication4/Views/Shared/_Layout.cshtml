@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Atlanta Rayara Math</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+    <meta charset="utf-8" />
+    <title> </title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+    <link rel="stylesheet" type="text/css" href="~/Content/theme.css">-->
+    <!--<script src="/Scripts/respond.js"></script>-->
+
+</head>
+<body style="background-color:lightgray">
+    
+    
+               
+    <div class="container" style="background-color:white">
+        <div style="text-align:center;">
+            <img src="/Images/header-2.JPG" width="1130">
+        </div>
+
+        <div id="navbar" class="navbar navbar-custom">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/" class="navbar-custom" >Home</a></li>
+                    <li><a href="/Home/Pooja">Pooja</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Shlokas<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Shlokas/DashavataraStuti">Dashavatara Stuti</a></li>
+                            <li><a href="/Shlokas/HariVayuStuti">Hari Vayu Stuti</a></li>
+                            <li><a href="/Shlokas/PurushaSuktha">Purusha Suktha</a></li>
+                            <li><a href="/Shlokas/RayaraStotra">Rayara Stotra</a></li>
+                            <li><a href="/Shlokas/VishnuSahasranama">Vishnu Sahasranama</a></li>
+                            <li><a href="/Shlokas/YantrodharaHanumanStotra">Yantrodhara Hanuman Stotra</a></li>
+                        </ul>
+                    </li>
+
+                    <!--<li><a href="/Member/Register.aspx">Subscription</a></li>-->
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-
+                           haspopup="true" aria-expanded="false">Eminent Saints<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Saints/Madhwacharya.aspx">Sriman Madhwacharya</a></li>
+                            <li><a href="/Saints/Akshobhyatheertha.aspx">Sriman Akshobhyatheertha</a></li>
+                            <li><a href="/Saints/Jayatheertha.aspx">Sriman Jayatheertha</a></li>
+                            <li><a href="/Saints/Sripadarajaru.aspx">Sriman Sripadarajaru</a></li>
+                            <li><a href="/Saints/Vyasarajaru.aspx">Sriman Vyasarajaru</a></li>
+                            <li><a href="/Saints/Vijayeendratheertha.aspx">Sriman Vijayeendratheertha</a></li>
+                            <li><a href="/Saints/Raghuttamatheertha.aspx">Sriman Raghuttamatheertha</a></li>
+                            <li><a href="/Saints/Raghavendraswami.aspx">Sriman Raghavendraswami</a></li>
+
+                        </ul>
+                    </li>
+
+
+                    <!--<li><a href="/About.aspx">About</a></li>-->
+                    <li><a href="/Contact.aspx">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-
+                           haspopup="true" aria-expanded="false">Photos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="/Photos/Aradhane2015.aspx">Aaradhane 2015</a></li>
+                        </ul>
+                    </li>
+
+
+                    <!--<li><a href="/pdf/aradhana-Invite.pdf" target="_blank">Aradhana invitation</a></li>-->
+
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/Member/Register.aspx"><span class="glyphicon glyphicon-user"></span>Subscription</a></li>
+
+                    <!--<li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>-->
+                </ul>
+
+                @Html.Partial("_LoginPartial")
+            </div>
+
+        </div>
+
+        <div class="container body-content">
+            <div>
+                <div class="box">
+                    <header><h1>Up coming Events</h1></header>
+                    <section>
+                        <b>
+                            ಕನ್ನಡ ರಾಜ್ಯೋತ್ಸವ 2015/RAJYOTSAVA 2015<br>
+                            Date:  November 7th 2015
+                        </b> <br>
+                        Place: Hindu temple of Atlanta, Riverdale, GA
+                        <ul style="text-align:left;padding-left:0px;">
+                            <li>Program Directors to register <br /><a href="/Event/participation/"><span style="color:blue;"> Click To Register </span></a></li>
+                            <li>Kids/Adults who wants to Participate <br /><a href="/Event/WantToJoin/"><span style="color:blue;"> Click To Participate  </span></a></li>
+                            <li>Program Directors who need Participants?<br /><a href="/Event/NeedPeopleToJoin/"><span style="color:blue;"> Click For Participants </span></a></li>
+                        </ul>
+                        <b>
+                            ದಾಸರ ಆರಾಧನೆ 2015/Daasara Aaaadhane 2015<br>
+                            Date: December 2015 exact date will be announced later
+                        </b> <br>
+                        Place: to be announced later
+                        <ul style="text-align:left;padding-left:0px;">
+                            <li>NKK is happy to announce it's successful 6th daasara aaraadhane 2015 by inviting all communities, everyone</a></li>
+                            <li>who can perform stage acts such as singing, instrument, drama, dance etc., in kannada on the daasa krutis/works</li>
+                            <li>This event is open to all  whereby each performer will register with fees to perform</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+
+            <div style="float:right;width:78%;vertical-align:top;margin-left:2%;">
+                @RenderBody()
+            </div>
+        </div>
+
+        
+        <footer style="text-align:center;">
+            <div class="content-wrapper">
+                <div class="float-left">
+                    <p>&copy; @DateTime.Now.Year.ToString() - Atlanta Rayara Math</p>
+                    <div id="fb-root"></div>
+                    <script>
+                    (function (d, s, id) {
+                        var js, fjs = d.getElementsByTagName(s)[0];
+                        if (d.getElementById(id)) return;
+                        js = d.createElement(s); js.id = id;
+                        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5";
+                        fjs.parentNode.insertBefore(js, fjs);
+                    }(document, 'script', 'facebook-jssdk'));</script>
+                                    <div class="fb-like" data-href="https://www.facebook.com/rayaraaardhane/?fref=ts" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
+                    <br /><br />
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+</body>
+</html>

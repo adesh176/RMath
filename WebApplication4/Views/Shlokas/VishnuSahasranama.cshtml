@@ -1,0 +1,16 @@
+﻿<br />
+    &nbsp;&nbsp;&nbsp;&nbsp;<a style="color:blue;" href="javascript:AttachFile('Kannada')">Kannada</a>
+    &nbsp;&nbsp; <a style="color:purple;" href="javascript:AttachFile('English')">English</a>
+    &nbsp;&nbsp; <a style="color:purple;" href="javascript:AttachFile('Tamil')">Tamil</a>
+    &nbsp;&nbsp; <a href="javascript:AttachFile('Telugu')">Telugu</a>
+    &nbsp; <a href="javascript:AttachFile('Devanagiri')">Devanagiri</a>
+<br /><br />
+<div style="text-align:center;" id="divFile"></div>
+<script>
+    function AttachFile(extn) {
+        var filename = "/Shlokas/" + "VishnuSahasranama/" + "Sree_Vishnu_Sahasra_Nama_Stotram_" + extn + ".pdf";
+        var scr = '<iframe src="' + filename + '" width="90%" height="5000"></iframe>';
+        $("#divFile").html(scr);
+    }
+    AttachFile("Kannada");
+</script>
